@@ -68,7 +68,7 @@ jobs:
       
       - uses: jpetrucciani/bandit-check@master
         with:
-          path: '.'
+          path: './Environment/App/app/flask/chaimtube.py'
           bandit_flags: '-lll -o logs/output.json -f json'
     
       - uses: actions/upload-artifact@v2
